@@ -1,0 +1,21 @@
+{
+  "generated_at": "2026-09-07T08:45:10",
+  "settings": {
+    "hf_repo_id": "Qwen/Qwen2.5-3B-Instruct",
+    "dtype": "float32",
+    "prompt": "エッジデバイスで小規模言語モデルを動かす利点を3つ挙げてください。",
+    "max_new_tokens": 32,
+    "cpu_threads": 8,
+    "warmup_runs": 1,
+    "offload_sweep_step": 4,
+    "offload_sweep_repeats": 3,
+    "boundary_sweep_repeats": 5,
+    "noise_floor_repeats": 10,
+    "results_dir": "results"
+  },
+  "torch": "2.11.0+cu128",
+  "cuda_device": "NVIDIA GeForce RTX 5070 Ti",
+  "cpu": "Intel64 Family 6 Model 165 Stepping 5, GenuineIntel",
+  "cpu_threads": 8,
+  "note": "PC環境（NVIDIA GPU + x86 CPU）の参考値。エッジNPUの性能予測には使用しない（NFR-3）"
+}

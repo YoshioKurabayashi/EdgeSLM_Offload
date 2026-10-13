@@ -1,0 +1,89 @@
+threads=8 dtype=float32 model=Qwen/Qwen2.5-3B-Instruct
+Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
+Loading weights:   0%|          | 0/434 [00:00<?, ?it/s]Loading weights: 100%|██████████| 434/434 [00:00<00:00, 5028.84it/s]
+layers=36 edge={'embed_tokens': 'cuda:0', 'lm_head': 'cuda:0', 'norm': 'cuda:0', 'tied': 'True'}
+--- boundary repeat 1/15 ---
+  blocked_b18      n_gpu=18 cross= 2 TTFT=   847.3ms decode=  308.25ms/tok (  3.24 tok/s)
+  blocked_b6       n_gpu=18 cross= 6 TTFT=   796.9ms decode=  287.96ms/tok (  3.47 tok/s)
+  blocked_b2       n_gpu=18 cross=18 TTFT=   817.4ms decode=  297.10ms/tok (  3.37 tok/s)
+  blocked_b1       n_gpu=18 cross=36 TTFT=   833.0ms decode=  306.05ms/tok (  3.27 tok/s)
+--- boundary repeat 2/15 ---
+  blocked_b18      n_gpu=18 cross= 2 TTFT=   772.2ms decode=  289.91ms/tok (  3.45 tok/s)
+  blocked_b6       n_gpu=18 cross= 6 TTFT=   831.5ms decode=  301.28ms/tok (  3.32 tok/s)
+  blocked_b2       n_gpu=18 cross=18 TTFT=   861.1ms decode=  282.86ms/tok (  3.54 tok/s)
+  blocked_b1       n_gpu=18 cross=36 TTFT=   870.2ms decode=  292.83ms/tok (  3.41 tok/s)
+--- boundary repeat 3/15 ---
+  blocked_b18      n_gpu=18 cross= 2 TTFT=   748.0ms decode=  275.20ms/tok (  3.63 tok/s)
+  blocked_b6       n_gpu=18 cross= 6 TTFT=   812.6ms decode=  298.35ms/tok (  3.35 tok/s)
+  blocked_b2       n_gpu=18 cross=18 TTFT=   978.7ms decode=  317.99ms/tok (  3.14 tok/s)
+  blocked_b1       n_gpu=18 cross=36 TTFT=   855.0ms decode=  316.50ms/tok (  3.16 tok/s)
+--- boundary repeat 4/15 ---
+  blocked_b18      n_gpu=18 cross= 2 TTFT=   827.5ms decode=  300.12ms/tok (  3.33 tok/s)
+  blocked_b6       n_gpu=18 cross= 6 TTFT=   816.0ms decode=  285.36ms/tok (  3.50 tok/s)
+  blocked_b2       n_gpu=18 cross=18 TTFT=   782.0ms decode=  286.34ms/tok (  3.49 tok/s)
+  blocked_b1       n_gpu=18 cross=36 TTFT=   782.1ms decode=  305.44ms/tok (  3.27 tok/s)
+--- boundary repeat 5/15 ---
+  blocked_b18      n_gpu=18 cross= 2 TTFT=   799.6ms decode=  278.72ms/tok (  3.59 tok/s)
+  blocked_b6       n_gpu=18 cross= 6 TTFT=   842.2ms decode=  279.32ms/tok (  3.58 tok/s)
+  blocked_b2       n_gpu=18 cross=18 TTFT=   801.1ms decode=  300.42ms/tok (  3.33 tok/s)
+  blocked_b1       n_gpu=18 cross=36 TTFT=   824.3ms decode=  303.94ms/tok (  3.29 tok/s)
+--- boundary repeat 6/15 ---
+  blocked_b18      n_gpu=18 cross= 2 TTFT=   760.0ms decode=  288.85ms/tok (  3.46 tok/s)
+  blocked_b6       n_gpu=18 cross= 6 TTFT=   850.2ms decode=  302.34ms/tok (  3.31 tok/s)
+  blocked_b2       n_gpu=18 cross=18 TTFT=   827.6ms decode=  296.36ms/tok (  3.37 tok/s)
+  blocked_b1       n_gpu=18 cross=36 TTFT=   815.5ms decode=  294.00ms/tok (  3.40 tok/s)
+--- boundary repeat 7/15 ---
+  blocked_b18      n_gpu=18 cross= 2 TTFT=   745.3ms decode=  275.92ms/tok (  3.62 tok/s)
+  blocked_b6       n_gpu=18 cross= 6 TTFT=   831.9ms decode=  286.43ms/tok (  3.49 tok/s)
+  blocked_b2       n_gpu=18 cross=18 TTFT=   782.9ms decode=  283.44ms/tok (  3.53 tok/s)
+  blocked_b1       n_gpu=18 cross=36 TTFT=   778.0ms decode=  290.23ms/tok (  3.45 tok/s)
+--- boundary repeat 8/15 ---
+  blocked_b18      n_gpu=18 cross= 2 TTFT=   756.6ms decode=  287.68ms/tok (  3.48 tok/s)
+  blocked_b6       n_gpu=18 cross= 6 TTFT=   833.2ms decode=  287.14ms/tok (  3.48 tok/s)
+  blocked_b2       n_gpu=18 cross=18 TTFT=   839.9ms decode=  299.67ms/tok (  3.34 tok/s)
+  blocked_b1       n_gpu=18 cross=36 TTFT=   888.9ms decode=  320.34ms/tok (  3.12 tok/s)
+--- boundary repeat 9/15 ---
+  blocked_b18      n_gpu=18 cross= 2 TTFT=   877.6ms decode=  308.81ms/tok (  3.24 tok/s)
+  blocked_b6       n_gpu=18 cross= 6 TTFT=   918.0ms decode=  321.19ms/tok (  3.11 tok/s)
+  blocked_b2       n_gpu=18 cross=18 TTFT=   913.9ms decode=  304.50ms/tok (  3.28 tok/s)
+  blocked_b1       n_gpu=18 cross=36 TTFT=   806.3ms decode=  308.49ms/tok (  3.24 tok/s)
+--- boundary repeat 10/15 ---
+  blocked_b18      n_gpu=18 cross= 2 TTFT=   764.7ms decode=  288.00ms/tok (  3.47 tok/s)
+  blocked_b6       n_gpu=18 cross= 6 TTFT=   763.0ms decode=  281.39ms/tok (  3.55 tok/s)
+  blocked_b2       n_gpu=18 cross=18 TTFT=   755.5ms decode=  297.35ms/tok (  3.36 tok/s)
+  blocked_b1       n_gpu=18 cross=36 TTFT=   767.5ms decode=  313.36ms/tok (  3.19 tok/s)
+--- boundary repeat 11/15 ---
+  blocked_b18      n_gpu=18 cross= 2 TTFT=   883.1ms decode=  306.23ms/tok (  3.27 tok/s)
+  blocked_b6       n_gpu=18 cross= 6 TTFT=   882.7ms decode=  315.09ms/tok (  3.17 tok/s)
+  blocked_b2       n_gpu=18 cross=18 TTFT=   868.6ms decode=  313.95ms/tok (  3.19 tok/s)
+  blocked_b1       n_gpu=18 cross=36 TTFT=   862.1ms decode=  307.06ms/tok (  3.26 tok/s)
+--- boundary repeat 12/15 ---
+  blocked_b18      n_gpu=18 cross= 2 TTFT=   796.3ms decode=  293.16ms/tok (  3.41 tok/s)
+  blocked_b6       n_gpu=18 cross= 6 TTFT=   862.8ms decode=  294.60ms/tok (  3.39 tok/s)
+  blocked_b2       n_gpu=18 cross=18 TTFT=   801.8ms decode=  305.72ms/tok (  3.27 tok/s)
+  blocked_b1       n_gpu=18 cross=36 TTFT=   909.9ms decode=  328.89ms/tok (  3.04 tok/s)
+--- boundary repeat 13/15 ---
+  blocked_b18      n_gpu=18 cross= 2 TTFT=   914.1ms decode=  319.52ms/tok (  3.13 tok/s)
+  blocked_b6       n_gpu=18 cross= 6 TTFT=   952.8ms decode=  313.76ms/tok (  3.19 tok/s)
+  blocked_b2       n_gpu=18 cross=18 TTFT=   800.3ms decode=  303.46ms/tok (  3.30 tok/s)
+  blocked_b1       n_gpu=18 cross=36 TTFT=   909.8ms decode=  302.35ms/tok (  3.31 tok/s)
+--- boundary repeat 14/15 ---
+  blocked_b18      n_gpu=18 cross= 2 TTFT=   806.2ms decode=  296.76ms/tok (  3.37 tok/s)
+  blocked_b6       n_gpu=18 cross= 6 TTFT=   899.7ms decode=  302.42ms/tok (  3.31 tok/s)
+  blocked_b2       n_gpu=18 cross=18 TTFT=   843.6ms decode=  308.45ms/tok (  3.24 tok/s)
+  blocked_b1       n_gpu=18 cross=36 TTFT=   878.7ms decode=  305.23ms/tok (  3.28 tok/s)
+--- boundary repeat 15/15 ---
+  blocked_b18      n_gpu=18 cross= 2 TTFT=   760.6ms decode=  288.55ms/tok (  3.47 tok/s)
+  blocked_b6       n_gpu=18 cross= 6 TTFT=   833.7ms decode=  293.82ms/tok (  3.40 tok/s)
+  blocked_b2       n_gpu=18 cross=18 TTFT=   799.1ms decode=  294.66ms/tok (  3.39 tok/s)
+  blocked_b1       n_gpu=18 cross=36 TTFT=   841.0ms decode=  308.05ms/tok (  3.25 tok/s)
+
+[単純な最小二乗（反復をブロックとして扱わない）]
+  境界1回あたり 365.4 µs （95%CI: 146.7 〜 584.0 µs, n=60）
+  → 傾きは有意。境界コストを検出した
+
+[対応のある回帰（反復をブロック因子として扱う）] ← 本命
+  境界1回あたり 365.4 µs （95%CI: 180.5 〜 550.2 µs, n=60）
+  → 傾きは有意。境界コストを検出した
+
+書き出し: results\boundary_20260907_085652.csv

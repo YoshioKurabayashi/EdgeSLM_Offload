@@ -1,0 +1,23 @@
+threads=8 dtype=float32
+Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
+Loading weights:   0%|          | 0/434 [00:00<?, ?it/s]Loading weights:   0%|          | 1/434 [00:01<08:03,  1.12s/it]Loading weights:  31%|###1      | 135/434 [00:01<00:02, 149.11it/s]Loading weights:  46%|####6     | 200/434 [00:01<00:01, 169.15it/s]Loading weights:  56%|#####6    | 245/434 [00:01<00:01, 176.76it/s]Loading weights:  65%|######4   | 281/434 [00:01<00:00, 180.79it/s]Loading weights:  72%|#######1  | 311/434 [00:02<00:00, 183.55it/s]Loading weights:  78%|#######7  | 337/434 [00:02<00:00, 159.97it/s]Loading weights:  83%|########2 | 359/434 [00:02<00:00, 152.02it/s]Loading weights:  87%|########7 | 378/434 [00:02<00:00, 129.71it/s]Loading weights:  91%|######### | 394/434 [00:02<00:00, 134.69it/s]Loading weights:  94%|#########4| 410/434 [00:02<00:00, 137.23it/s]Loading weights:  98%|#########8| 426/434 [00:03<00:00, 96.52it/s] Loading weights: 100%|##########| 434/434 [00:03<00:00, 132.15it/s]
+[load] 14.9s  layers=36
+[edge devices] {'embed_tokens': 'cuda:0', 'lm_head': 'cuda:0', 'norm': 'cuda:0', 'tied': 'True'}
+[contiguous_n36  ] pattern=GGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGG
+    moved=36 ratio=1.00 crossings: analytic= 0 measured=0.00 OK 
+    TTFT= 29629.4ms  decode= 467.84ms/tok (  2.14 tok/s)  VRAM=11.54GiB
+    text='エッジデバイスで小'
+[contiguous_n0   ] pattern=CCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCC
+    moved=36 ratio=0.00 crossings: analytic= 2 measured=2.00 OK 
+    TTFT=  9934.9ms  decode= 547.53ms/tok (  1.83 tok/s)  VRAM=1.20GiB
+    トークン列は全GPU配置と一致
+[contiguous_n18  ] pattern=GGGGGGGGGGGGGGGGGGCCCCCCCCCCCCCCCCCC
+    moved=18 ratio=0.50 crossings: analytic= 2 measured=2.00 OK 
+    TTFT=   690.4ms  decode= 276.16ms/tok (  3.62 tok/s)  VRAM=6.37GiB
+    トークン列は全GPU配置と一致
+[blocked_b1      ] pattern=GCGCGCGCGCGCGCGCGCGCGCGCGCGCGCGCGCGC
+    moved=18 ratio=0.50 crossings: analytic=36 measured=36.00 OK 
+    TTFT=   794.0ms  decode= 279.03ms/tok (  3.58 tok/s)  VRAM=6.37GiB
+    トークン列は全GPU配置と一致
+
+=== SMOKE TEST: PASS ===

@@ -1,0 +1,14 @@
+torch=2.11.0+cu128  tf32_matmul=False
+VRAM free=14.66 / total=15.92 GiB
+
+=== C. 単体GEMM (fp32, GPU) ===
+  2048^3:   0.556 ms  ( 30.89 TFLOPS)
+  4096^3:   4.330 ms  ( 31.74 TFLOPS)
+
+=== モデルロード ===
+Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
+Loading weights:   0%|          | 0/434 [00:00<?, ?it/s]Loading weights:   0%|          | 1/434 [00:01<08:12,  1.14s/it]Loading weights:  18%|#7        | 77/434 [00:01<00:04, 82.10it/s]Loading weights:  25%|##5       | 110/434 [00:01<00:03, 99.04it/s]Loading weights:  31%|###1      | 135/434 [00:02<00:04, 61.61it/s]Loading weights:  37%|###6      | 159/434 [00:03<00:07, 37.91it/s]Loading weights:  39%|###9      | 170/434 [00:04<00:08, 31.07it/s]Loading weights:  41%|####1     | 178/434 [00:06<00:19, 13.07it/s]Loading weights:  42%|####2     | 184/434 [00:07<00:17, 14.53it/s]Loading weights:  45%|####4     | 195/434 [00:07<00:13, 18.12it/s]Loading weights:  46%|####6     | 201/434 [00:07<00:11, 20.15it/s]Loading weights:  50%|#####     | 219/434 [00:07<00:07, 28.93it/s]Loading weights:  53%|#####3    | 231/434 [00:07<00:05, 36.34it/s]Loading weights:  56%|#####5    | 243/434 [00:07<00:04, 44.43it/s]Loading weights:  59%|#####8    | 255/434 [00:08<00:06, 28.81it/s]Loading weights:  60%|######    | 262/434 [00:08<00:05, 28.69it/s]Loading weights:  62%|######1   | 268/434 [00:09<00:07, 20.90it/s]Loading weights:  63%|######2   | 272/434 [00:09<00:07, 22.28it/s]Loading weights:  64%|######4   | 279/434 [00:10<00:08, 18.47it/s]Loading weights:  64%|######4   | 279/434 [00:30<00:08, 18.47it/s]Loading weights:  65%|######4   | 280/434 [00:30<03:00,  1.17s/it]Loading weights:  68%|######7   | 293/434 [00:31<01:27,  1.61it/s]Loading weights:  73%|#######2  | 315/434 [00:31<00:33,  3.52it/s]Loading weights:  76%|#######5  | 328/434 [00:32<00:21,  5.03it/s]Loading weights:  77%|#######7  | 335/434 [00:32<00:16,  5.93it/s]Loading weights:  79%|#######8  | 341/434 [00:47<00:56,  1.64it/s]Loading weights:  81%|########1 | 353/434 [00:47<00:32,  2.49it/s]Loading weights:  86%|########6 | 375/434 [00:47<00:12,  4.73it/s]Loading weights:  89%|########9 | 387/434 [00:48<00:07,  6.15it/s]Loading weights:  91%|######### | 394/434 [00:48<00:05,  7.06it/s]Loading weights:  92%|#########1| 399/434 [00:48<00:04,  7.47it/s]Loading weights:  93%|#########2| 403/434 [00:49<00:03,  8.06it/s]Loading weights:  95%|#########4| 411/434 [00:52<00:04,  4.80it/s]Loading weights:  95%|#########5| 414/434 [00:52<00:03,  5.35it/s]Loading weights:  96%|#########6| 417/434 [00:54<00:04,  3.93it/s]Loading weights:  97%|#########7| 423/434 [00:54<00:01,  5.59it/s]Loading weights: 100%|##########| 434/434 [00:54<00:00,  7.97it/s]
+  load 72.9s
+  prompt tokens = 56
+
+=== A. フック無し / 素の model.to('cuda') ===
